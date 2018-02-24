@@ -9,8 +9,6 @@
 - [CookieService](#T-Scorchio-Services-CookieService 'Scorchio.Services.CookieService')
   - [#ctor()](#M-Scorchio-Services-CookieService-#ctor 'Scorchio.Services.CookieService.#ctor')
   - [#ctor(request,response)](#M-Scorchio-Services-CookieService-#ctor-System-Web-HttpRequestBase,System-Web-HttpResponseBase- 'Scorchio.Services.CookieService.#ctor(System.Web.HttpRequestBase,System.Web.HttpResponseBase)')
-  - [request](#F-Scorchio-Services-CookieService-request 'Scorchio.Services.CookieService.request')
-  - [response](#F-Scorchio-Services-CookieService-response 'Scorchio.Services.CookieService.response')
   - [Expire(key)](#M-Scorchio-Services-CookieService-Expire-System-String- 'Scorchio.Services.CookieService.Expire(System.String)')
   - [GetValue(key)](#M-Scorchio-Services-CookieService-GetValue-System-String- 'Scorchio.Services.CookieService.GetValue(System.String)')
   - [GetValue\`\`1(key)](#M-Scorchio-Services-CookieService-GetValue``1-System-String- 'Scorchio.Services.CookieService.GetValue``1(System.String)')
@@ -18,10 +16,6 @@
   - [SetValue(key,value,expires)](#M-Scorchio-Services-CookieService-SetValue-System-String,System-Object,System-DateTime- 'Scorchio.Services.CookieService.SetValue(System.String,System.Object,System.DateTime)')
 - [EncryptionService](#T-Scorchio-Services-EncryptionService 'Scorchio.Services.EncryptionService')
   - [#ctor()](#M-Scorchio-Services-EncryptionService-#ctor 'Scorchio.Services.EncryptionService.#ctor')
-  - [encoder](#F-Scorchio-Services-EncryptionService-encoder 'Scorchio.Services.EncryptionService.encoder')
-  - [encryptionKey](#F-Scorchio-Services-EncryptionService-encryptionKey 'Scorchio.Services.EncryptionService.encryptionKey')
-  - [random](#F-Scorchio-Services-EncryptionService-random 'Scorchio.Services.EncryptionService.random')
-  - [rm](#F-Scorchio-Services-EncryptionService-rm 'Scorchio.Services.EncryptionService.rm')
   - [Decrypt(buffer,vector)](#M-Scorchio-Services-EncryptionService-Decrypt-System-Byte[],System-Byte[]- 'Scorchio.Services.EncryptionService.Decrypt(System.Byte[],System.Byte[])')
   - [DecryptNumber(textToDecrypt)](#M-Scorchio-Services-EncryptionService-DecryptNumber-System-String- 'Scorchio.Services.EncryptionService.DecryptNumber(System.String)')
   - [DecryptString(textToDecrypt)](#M-Scorchio-Services-EncryptionService-DecryptString-System-String- 'Scorchio.Services.EncryptionService.DecryptString(System.String)')
@@ -195,20 +189,6 @@ Initializes a new instance of the [CookieService](#T-Scorchio-Services-CookieSer
 | request | [System.Web.HttpRequestBase](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Web.HttpRequestBase 'System.Web.HttpRequestBase') | The request. |
 | response | [System.Web.HttpResponseBase](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.Web.HttpResponseBase 'System.Web.HttpResponseBase') | The response. |
 
-<a name='F-Scorchio-Services-CookieService-request'></a>
-### request `constants` [#](#F-Scorchio-Services-CookieService-request 'Go To Here') [=](#contents 'Back To Contents')
-
-##### Summary
-
-The http request.
-
-<a name='F-Scorchio-Services-CookieService-response'></a>
-### response `constants` [#](#F-Scorchio-Services-CookieService-response 'Go To Here') [=](#contents 'Back To Contents')
-
-##### Summary
-
-The http response.
-
 <a name='M-Scorchio-Services-CookieService-Expire-System-String-'></a>
 ### Expire(key) `method` [#](#M-Scorchio-Services-CookieService-Expire-System-String- 'Go To Here') [=](#contents 'Back To Contents')
 
@@ -316,34 +296,6 @@ Initializes a new instance of the [EncryptionService](#T-Scorchio-Services-Encry
 ##### Parameters
 
 This constructor has no parameters.
-
-<a name='F-Scorchio-Services-EncryptionService-encoder'></a>
-### encoder `constants` [#](#F-Scorchio-Services-EncryptionService-encoder 'Go To Here') [=](#contents 'Back To Contents')
-
-##### Summary
-
-The encoder.
-
-<a name='F-Scorchio-Services-EncryptionService-encryptionKey'></a>
-### encryptionKey `constants` [#](#F-Scorchio-Services-EncryptionService-encryptionKey 'Go To Here') [=](#contents 'Back To Contents')
-
-##### Summary
-
-The encryptionKey.
-
-<a name='F-Scorchio-Services-EncryptionService-random'></a>
-### random `constants` [#](#F-Scorchio-Services-EncryptionService-random 'Go To Here') [=](#contents 'Back To Contents')
-
-##### Summary
-
-The random.
-
-<a name='F-Scorchio-Services-EncryptionService-rm'></a>
-### rm `constants` [#](#F-Scorchio-Services-EncryptionService-rm 'Go To Here') [=](#contents 'Back To Contents')
-
-##### Summary
-
-The rm
 
 <a name='M-Scorchio-Services-EncryptionService-Decrypt-System-Byte[],System-Byte[]-'></a>
 ### Decrypt(buffer,vector) `method` [#](#M-Scorchio-Services-EncryptionService-Decrypt-System-Byte[],System-Byte[]- 'Go To Here') [=](#contents 'Back To Contents')

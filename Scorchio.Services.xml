@@ -48,16 +48,6 @@
             </summary>
             <seealso cref="T:Scorchio.Services.ICookieService" />
         </member>
-        <member name="F:Scorchio.Services.CookieService.request">
-            <summary>
-            The http request.
-            </summary>
-        </member>
-        <member name="F:Scorchio.Services.CookieService.response">
-            <summary>
-            The http response.
-            </summary>
-        </member>
         <member name="M:Scorchio.Services.CookieService.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:Scorchio.Services.CookieService"/> class.
@@ -111,26 +101,6 @@
             Encryption Service.
             </summary>
             <seealso cref="T:Scorchio.Services.IEncryptionService" />
-        </member>
-        <member name="F:Scorchio.Services.EncryptionService.random">
-            <summary>
-            The random.
-            </summary>
-        </member>
-        <member name="F:Scorchio.Services.EncryptionService.rm">
-            <summary>
-            The rm
-            </summary>
-        </member>
-        <member name="F:Scorchio.Services.EncryptionService.encoder">
-            <summary>
-            The encoder.
-            </summary>
-        </member>
-        <member name="F:Scorchio.Services.EncryptionService.encryptionKey">
-            <summary>
-            The encryptionKey.
-            </summary>
         </member>
         <member name="M:Scorchio.Services.EncryptionService.#ctor">
             <summary>

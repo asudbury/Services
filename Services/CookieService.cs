@@ -10,14 +10,7 @@
     /// <seealso cref="Scorchio.Services.ICookieService" />
     public class CookieService : ICookieService
     {
-        /// <summary>
-        /// The http request.
-        /// </summary>
         private readonly HttpRequestBase request;
-
-        /// <summary>
-        /// The http response.
-        /// </summary>
         private readonly HttpResponseBase response;
         
         /// <summary>

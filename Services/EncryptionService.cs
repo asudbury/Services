@@ -13,24 +13,9 @@ namespace Scorchio.Services
     /// <seealso cref="Scorchio.Services.IEncryptionService" />
     public class EncryptionService : IEncryptionService
     {
-        /// <summary>
-        /// The random.
-        /// </summary>
         private readonly Random random;
-
-        /// <summary>
-        /// The rm
-        /// </summary>
         private readonly RijndaelManaged rm;
-        
-        /// <summary>
-        /// The encoder.
-        /// </summary>
         private readonly UTF8Encoding encoder;
-        
-        /// <summary>
-        /// The encryptionKey.
-        /// </summary>
         private byte[] encryptionKey;
 
         /// <summary>
