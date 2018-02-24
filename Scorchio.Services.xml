@@ -1,0 +1,354 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Scorchio.Services</name>
+    </assembly>
+    <members>
+        <member name="T:Scorchio.Services.CacheService">
+            <summary>
+            Cache Service.
+            </summary>
+            <seealso cref="T:Scorchio.Services.ICacheService" />
+        </member>
+        <member name="M:Scorchio.Services.CacheService.Add``1(``0,System.String)">
+            <inheritdoc />
+            <summary>
+            Adds the specified o.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="o">The o.</param>
+            <param name="key">The key.</param>
+        </member>
+        <member name="M:Scorchio.Services.CacheService.Get``1(System.String)">
+            <summary>
+            Gets the specified key.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.CacheService.Clear(System.String)">
+            <inheritdoc />
+            <summary>
+            Clears the specified key.
+            </summary>
+            <param name="key">The key.</param>
+        </member>
+        <member name="M:Scorchio.Services.CacheService.Exists(System.String)">
+            <inheritdoc />
+            <summary>
+            Existses the specified key.
+            </summary>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Scorchio.Services.CookieService">
+            <summary>
+            Cookie Service.
+            </summary>
+            <seealso cref="T:Scorchio.Services.ICookieService" />
+        </member>
+        <member name="F:Scorchio.Services.CookieService.request">
+            <summary>
+            The http request.
+            </summary>
+        </member>
+        <member name="F:Scorchio.Services.CookieService.response">
+            <summary>
+            The http response.
+            </summary>
+        </member>
+        <member name="M:Scorchio.Services.CookieService.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Scorchio.Services.CookieService"/> class.
+            </summary>
+        </member>
+        <member name="M:Scorchio.Services.CookieService.#ctor(System.Web.HttpRequestBase,System.Web.HttpResponseBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Scorchio.Services.CookieService"/> class.
+            </summary>
+            <param name="request">The request.</param>
+            <param name="response">The response.</param>
+        </member>
+        <member name="M:Scorchio.Services.CookieService.GetValue(System.String)">
+            <summary>
+            Gets the value.
+            </summary>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.CookieService.GetValue``1(System.String)">
+            <summary>
+            Gets the value of a cookie with the given key.
+            </summary>
+            <typeparam name="T">The type of value the cookie contains.</typeparam>
+            <param name="key">The key.</param>
+            <returns>The value converted into type T</returns>
+        </member>
+        <member name="M:Scorchio.Services.CookieService.SetValue(System.String,System.Object)">
+            <summary>
+            Sets a cookie that will expire with users browser session.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Scorchio.Services.CookieService.SetValue(System.String,System.Object,System.DateTime)">
+            <summary>
+            Sets the value.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+            <param name="expires">The expires.</param>
+        </member>
+        <member name="M:Scorchio.Services.CookieService.Expire(System.String)">
+            <summary>
+            Expires the specified key.
+            </summary>
+            <param name="key">The key.</param>
+        </member>
+        <member name="T:Scorchio.Services.EncryptionService">
+            <summary>
+            Encryption Service.
+            </summary>
+            <seealso cref="T:Scorchio.Services.IEncryptionService" />
+        </member>
+        <member name="F:Scorchio.Services.EncryptionService.random">
+            <summary>
+            The random.
+            </summary>
+        </member>
+        <member name="F:Scorchio.Services.EncryptionService.rm">
+            <summary>
+            The rm
+            </summary>
+        </member>
+        <member name="F:Scorchio.Services.EncryptionService.encoder">
+            <summary>
+            The encoder.
+            </summary>
+        </member>
+        <member name="F:Scorchio.Services.EncryptionService.encryptionKey">
+            <summary>
+            The encryptionKey.
+            </summary>
+        </member>
+        <member name="M:Scorchio.Services.EncryptionService.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Scorchio.Services.EncryptionService"/> class.
+            </summary>
+        </member>
+        <member name="M:Scorchio.Services.EncryptionService.EncryptString(System.String)">
+            <inheritdoc />
+            <summary>
+            Encrypts the string.
+            </summary>
+            <param name="textToEncrypt">The text to encrypt.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.EncryptionService.EncryptString(System.Int32)">
+            <summary>
+            Encrypts the string.
+            </summary>
+            <param name="textToEncrypt">The text to encrypt.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.EncryptionService.EncryptString(System.String,System.String)">
+            <inheritdoc />
+            <summary>
+            Encrypts the string.
+            </summary>
+            <param name="textToEncrypt">The text to encrypt.</param>
+            <param name="key">The encryptionKey.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.EncryptionService.DecryptString(System.String)">
+            <inheritdoc />
+            <summary>
+            Decrypts the string.
+            </summary>
+            <param name="textToDecrypt">The text to decrypt.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException">Not a valid encrypted string;encrypted</exception>
+        </member>
+        <member name="M:Scorchio.Services.EncryptionService.DecryptString(System.String,System.String)">
+            <inheritdoc />
+            <summary>
+            Decrypts the string.
+            </summary>
+            <param name="textToDecrypt">The text to decrypt.</param>
+            <param name="key">The ket.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.EncryptionService.DecryptNumber(System.String)">
+            <summary>
+            Decrypts the number.
+            </summary>
+            <param name="textToDecrypt">The text to decrypt.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.EncryptionService.Encrypt(System.Byte[],System.Byte[])">
+            <summary>
+            Encrypts the specified buffer.
+            </summary>
+            <param name="buffer">The buffer.</param>
+            <param name="vector">The vector.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.EncryptionService.Decrypt(System.Byte[],System.Byte[])">
+            <summary>
+            Decrypts the specified buffer.
+            </summary>
+            <param name="buffer">The buffer.</param>
+            <param name="vector">The vector.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.EncryptionService.Transform(System.Byte[],System.Security.Cryptography.ICryptoTransform)">
+            <summary>
+            Transforms the specified buffer.
+            </summary>
+            <param name="buffer">The buffer.</param>
+            <param name="transform">The transform.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.EncryptionService.UrlSafeConvertToBase64String(System.Byte[])">
+            <summary>
+            Safely converts to a base64 string excluding unwanted characters.
+            </summary>
+            <param name="bytes">The bytes.</param>
+            <returns>URL safe Base64 string</returns>
+        </member>
+        <member name="M:Scorchio.Services.EncryptionService.UrlSafeConvertFromBase64String(System.String)">
+            <summary>
+            Safely converts to a base64 string excluding unwanted characters.
+            </summary>
+            <param name="safeBase64">The safe base64.</param>
+            <returns>
+            URL safe Base64 string
+            </returns>
+        </member>
+        <member name="T:Scorchio.Services.ICacheService">
+            <summary>
+            Cache Service Interface.
+            </summary>
+        </member>
+        <member name="M:Scorchio.Services.ICacheService.Add``1(``0,System.String)">
+            <summary>
+            Adds the specified o.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="o">The o.</param>
+            <param name="key">The key.</param>
+        </member>
+        <member name="M:Scorchio.Services.ICacheService.Get``1(System.String)">
+            <summary>
+            Gets the specified key.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.ICacheService.Clear(System.String)">
+            <summary>
+            Clears the specified key.
+            </summary>
+            <param name="key">The key.</param>
+        </member>
+        <member name="M:Scorchio.Services.ICacheService.Exists(System.String)">
+            <summary>
+            Existses the specified key.
+            </summary>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Scorchio.Services.ICookieService">
+            <summary>
+            Cookie Service Interface.
+            </summary>
+        </member>
+        <member name="M:Scorchio.Services.ICookieService.GetValue(System.String)">
+            <summary>
+            Gets the value.
+            </summary>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.ICookieService.GetValue``1(System.String)">
+            <summary>
+            Gets the value of a cookie with the given key.
+            </summary>
+            <typeparam name="T">The type of value the cookie contains.</typeparam>
+            <param name="key">The key.</param>
+            <returns>The value converted into type T</returns>
+        </member>
+        <member name="M:Scorchio.Services.ICookieService.SetValue(System.String,System.Object)">
+            <summary>
+            Sets a cookie that will expire with users browser session.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Scorchio.Services.ICookieService.SetValue(System.String,System.Object,System.DateTime)">
+            <summary>
+            Sets the value.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+            <param name="expires">The expires.</param>
+        </member>
+        <member name="M:Scorchio.Services.ICookieService.Expire(System.String)">
+            <summary>
+            Expires the specified key.
+            </summary>
+            <param name="key">The key.</param>
+        </member>
+        <member name="T:Scorchio.Services.IEncryptionService">
+            <summary>
+            Encryption Service Interface.
+            </summary>
+        </member>
+        <member name="M:Scorchio.Services.IEncryptionService.EncryptString(System.String)">
+            <summary>
+            Encrypts the string.
+            </summary>
+            <param name="textToEncrypt">The text to encrypt.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.IEncryptionService.EncryptString(System.Int32)">
+            <summary>
+            Encrypts the string.
+            </summary>
+            <param name="textToEncrypt">The text to encrypt.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.IEncryptionService.EncryptString(System.String,System.String)">
+            <summary>
+            Encrypts the string.
+            </summary>
+            <param name="textToEncrypt">The text to encrypt.</param>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.IEncryptionService.DecryptString(System.String)">
+            <summary>
+            Decrypts the string.
+            </summary>
+            <param name="textToDecrypt">The text to decrypt.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.IEncryptionService.DecryptString(System.String,System.String)">
+            <summary>
+            Decrypts the string.
+            </summary>
+            <param name="textToDecrypt">The text to decrypt.</param>
+            <param name="key">The ket.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Scorchio.Services.IEncryptionService.DecryptNumber(System.String)">
+            <summary>
+            Decrypts the number.
+            </summary>
+            <param name="textToDecrypt">The text to decrypt.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Scorchio.Services</id>
+        <version>1.0.0</version>
+        <title>Scorchio Services</title>
+        <authors>Adrian Sudbury</authors>
+        <owners>Scorchio Limited</owners>
+        <projectUrl>https://github.com/asudbury/Services</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Services for C#.</description>
+        <language>en-GB</language>
+    </metadata>
+    <files>
+        <file src="Services\bin\Debug\Scorchio.Services.dll" target="lib\Scorchio.Services.dll" />
+    </files>
+</package>
