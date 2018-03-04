@@ -12,7 +12,7 @@
 
 [AppVeyor Build Status](https://ci.appveyor.com/project/asudbury/services)
 
-[![nuget](https://img.shields.io/nuget/v/Scorchio.PostalAddressSearch.svg)](https://www.nuget.org/packages/Scorchio.Services/)
+[![nuget](https://img.shields.io/nuget/v/Scorchio.Services.svg)](https://www.nuget.org/packages/Scorchio.Services/)
 
 [Nuget Package](https://www.nuget.org/packages/Scorchio.Services/)
 
