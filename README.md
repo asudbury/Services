@@ -15,7 +15,7 @@
     </tr>
     <tr>
         <td align="center"><a href="https://www.nuget.org/packages/Scorchio.Services">Nuget Package</a></td>
-        <td align="center"><a href="https://www.nuget.org/packages/Scorchio.Services"><img src="https://img.shields.io/nuget/v/Scorchio.Services.svg"></img></a></td>
+        <td align="center"><a href="https://www.nuget.org/packages/Scorchio.Services"><img src='https://buildstats.info/nuget/Scorchio.Services'/></a></td>
 </table>
 
 [Application Programming Interface](Scorchio.Services.md)
