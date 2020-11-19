@@ -2,12 +2,6 @@
 
 <table align="center">
     <tr>
-        <td align="center"><a href=http://scorchio-server.westeurope.cloudapp.azure.com:888/viewType.html?buildTypeId=Services_Build&guest=1)>Team City Build Status</a></td>
-        <td align="center"><a href="http://scorchio-server.westeurope.cloudapp.azure.com:888/viewType.html?buildTypeId=Services_Build&guest=1">
-	<img src="http://scorchio-server.westeurope.cloudapp.azure.com:888/app/rest/builds/buildType:(id:Services_Build)/statusIcon"/>
-</a></td>
-    </tr>
-    <tr>
         <td align="center"><a href="https://ci.appveyor.com/project/asudbury/extensionmethods">AppVeyor Build Status</td>
         <td align="center"><a href="https://ci.appveyor.com/project/asudbury/services">
 	<img src='https://ci.appveyor.com/api/projects/status/5563pl7h01w93v3h?svg=true'/>
